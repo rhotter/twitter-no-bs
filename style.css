@@ -1,0 +1,24 @@
+/* new twitter */
+div:not(.ProfileTweet-actionList)[aria-label="Tweet actions"] span, /* like/retweet/reply metrics in feed */
+div[data-testid="like"] div span, /* like tweet metrics */
+div[data-testid="unlike"] div span, /* like tweet metrics if you liked it */
+div[data-testid="reply"] div span, /* reply tweet metrics */
+div[data-testid="retweet"] div span, /* retweet tweet metrics */
+div[data-testid="unretweet"] div span, /* unretweet tweet metrics */
+a.r-jwli3a[aria-haspopup] span div div, /* tweet detail page like/retweet/reply */
+div.r-7o8qx1 div.r-axxi2z, /* like metrics on individual tweet pages (e.g. /bengrosser/status/0982734...) */
+div.css-1dbjc4n a.css-4rbku5 span.r-vw2c0b, /* profile and popout following/follower metrics 4/1 */
+div[dir="auto"] span.r-jwli3a /* following/followers on message user header */ {
+  /*
+    display:none;
+    */
+  opacity: 0;
+}
+
+a[href*="/followers"], /* followers on profile */
+a[href*="/following"], /* following/followers on profile 3/25 */
+a[href*="/retweets"],
+a[href*="/likes"],
+a[href="/notifications"] /* notifications bar */ {
+  display: none;
+}

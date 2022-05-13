@@ -1,0 +1,15 @@
+{
+  "name": "Twitter No BS",
+  "action": {},
+  "description": "Remove stupidities from Twitter",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["*://*.twitter.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*"],
+      "css": ["style.css"]
+    }
+  ]
+}
